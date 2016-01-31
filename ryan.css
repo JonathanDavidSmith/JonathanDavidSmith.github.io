@@ -1,0 +1,154 @@
+h1{
+
+margin-left: 5em;
+}
+.fixed{
+
+	
+}
+body{
+background-color: white;
+
+}
+div img{
+   position: fixed;
+    top: 0;
+    right: 0;
+    width: 50em;
+    
+}
+#primary_nav_wrap
+{
+	margin-top: 5px;
+}
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul a
+{
+	display:block;
+	color:#333;
+	text-decoration:none;
+	font-weight:700;
+	font-size:12px;
+	line-height:32px;
+	padding:0 55px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+	background:#ddd
+}
+
+#primary_nav_wrap ul li:hover
+{
+	background:#f6f6f6
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#fff;
+	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+
+#primary_nav_wrap ul ul ul
+{
+	top:0;
+	left:100%
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block
+}
+
+
+/* @CHARSET "UTF-8";
+#container {
+  margin: 0 auto;
+}
+
+nav {
+  margin: 0px 0;
+  background-color: black;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  }
+  
+nav ul li {
+  display:inline-block;
+  background-color: green;
+  }
+
+nav a {
+  display:block;
+  padding:0 10px; 
+  color:#FFF;
+  font-size:20px;
+  line-height: 60px;
+  text-decoration:none;
+}
+
+nav a:hover { 
+  background-color: #000000; 
+}
+
+Hide Dropdowns by Default
+nav ul ul {
+  display: none;
+  position: absolute; 
+  top: 60px; the height of the main nav
+}
+  
+Display Dropdowns on Hover */
+nav ul li:hover > ul {
+/*   display:inherit;
+}
+  
+First Tier Dropdown
+nav ul ul li {
+  width:170px;
+  float:none;
+  display:list-item;
+  position: relative;
+}
+Change this in order to change the Dropdown symbol
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: '';} */
