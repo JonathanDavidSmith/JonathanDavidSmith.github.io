@@ -1,0 +1,54 @@
+<!--  Originally my idea for this project was to be a basic image host.  I had decided on utilizing web URLs as the source for the images.  I placed 36 different 
+URLs in a csv file and had my "imageDataDAO" import and place the files in an array list.  
+#1 personal lesson:  Using the URLs instead of internal files was a much bigger challenge for me.  As far as the logic is concerned, I don't believe it would
+be any more difficult to for a more experienced developer to use URLs vs jpegs, but i had a difficult time with it. 
+The images will display in their perspective categories... Holidays, Technology, Animals, and Food (not in that order).  The person viewing can click on 
+each category and see the images displayed.  Additionally, they can upload their own url to be seen with the other images.
+This was also a challenge.  For lack of time on my part, the code only allows for an image to be uploaded into the "Holiday" category.  
+The user can also delete images.  I began with a deleteAll method to wipe out the entire arraylist.  That works very well. 
+Sunday afternoon i began to work on code that would allow the user to delete one image at a time.  The logic uses the URL address itself
+as the name for the file through href.  The user can click on any chosen image and it will be deleted.  However, the output after that would 
+show ALL the images in the csv file instead of just the images in their perspective categories.  
+It was already late Sunday evening and was ready to go home (I was still at skill distillery at 7pm sunday night)
+SO... i decided to just keep the deleteAll method in place.  Its not ideal, but does complete the CRUD requirements.
+Hopefully i'll be able to modify this application in the near future to improve on its potential.
+NOTE***** When uploading a new photo.. it's automatically stored in "Holiday".  Ran out of time to give the user category selections. So.. if you upload 
+an image, go to Holiday and you will see your image there.****  --> 
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	  <div id="container">
+        <nav>
+             <ul>
+                <li><a href="http://52.89.186.103:8080/Mwords/">Home</a></li>
+                <li><a href="#">Images</a>
+                  <ul>
+                      <li><a href="animals.do">Animals</a></li>
+                      <li><a href="technology.do">Technology</a></li>
+                      <li><a href="food.do">Food</a></li>
+                      <li><a href="holiday.do">Holiday</a></li>
+                  </ul>
+                </li>
+                <li><a href="http://52.89.186.103:8080/Mwords/NewImage.do">Upload</a></li>
+                <li><a href="#">Delete</a>
+                <!-- First Tier Drop Down -->
+                  <ul>
+                      <li><a href="deleteanimals.do">Delete ALL</a></li>
+                      <li><a href="deletetechnology.do">Technology</a></li>
+                      <li><a href="deletefood.do">Food</a></li> 
+                      <li><a href="deleteholiday.do">Holiday</a></li>
+                  </ul>        
+                </li> 
+            </ul>
+        </nav>
+	  	<div class="headline"><h1>Welcome to Mwords where a picture is worth a thousand words!</h1>
+	  	<p>psst... M is the Roman numeral for 1000.</p></div>
+    </div>
+    
+</body>
+</html>
